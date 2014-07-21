@@ -51,17 +51,17 @@ router.get('/p/:id', function(req, res) {
 
 
 router.post('/p/:id', function(req, res) {
-
-  var post = {
+  var id = req.param("id")
+  , post = {
     text: req.param("answer")
   }
 
   db.newEventBuilder()
-    .from('forum-project', req.param("id"))
+    .from('forum-project', id)
     .type('post')
     .data(post)
     .then(function (results){
-      res.redirect("/p/" + req.param("id"));
+      res.redirect("/p/" + id);
     });
 });
 
