@@ -67,13 +67,15 @@ router.post('/p/:id', function(req, res) {
 
 /** POST / create a new topic **/
 router.post('/new_topic', function (req, res){
-  var title = req.param("title");
-  var subject = req.param("subject");
+  var title = req.param("title")
+  , subject = req.param("subject")
+  , date = moment().format('MMMM Do YYYY, h:mm:ss a')
+
 
   db.post('forum-project', {
     "sub-title" : title,
     "sub-dis" : subject,
-    "date" : moment().format('MMMM Do YYYY, h:mm:ss a')
+    "date" : date
   })
   .then(function (result) {
     var responseKey = result.headers.location.split("/")[3];
