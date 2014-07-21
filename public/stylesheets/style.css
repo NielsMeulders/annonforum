@@ -1,0 +1,36 @@
+a.pageNum {
+  margin-right: 5px;
+  color: #574DFF;
+}
+
+h4.homepage {
+  margin-top: 10px;
+}
+
+hr {
+  margin-top: 0px;
+}
+
+textarea.commentBox {
+  height: 200px;
+  resize: none;
+}
+
+div.comment {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+
+div.comment p {
+  font-size: 21px;
+}
+
+
+.posted-date {
+  font-size: 9px;
+}
+
+.posted-date blockquote {
+  border-left: none;
+}
