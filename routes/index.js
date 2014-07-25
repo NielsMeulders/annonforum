@@ -62,7 +62,7 @@ router.post('/p/:id', function(req, res) {
 });
 
 /** POST / create a new topic **/
-router.post('/new_topic', function (req, res){
+router.post('/topic', function (req, res){
   var title = req.param("title")
   , subject = req.param("subject")
   , date = moment().format('MMMM Do YYYY, h:mm:ss a')

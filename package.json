@@ -1,5 +1,6 @@
 {
   "name": "redditknockoff",
+  "author" : "Tory Adams"
   "version": "0.0.1",
   "private": true,
   "dependencies": {

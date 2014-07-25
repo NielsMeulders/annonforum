@@ -20,12 +20,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/new_topic', routes);
+app.use('/topic', routes);
 app.use('/p/:id', routes);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
-    res.render("404"); 
+    res.render("404");
 });
 
 /// error handlers
@@ -52,7 +52,7 @@ app.use(function(err, req, res, next) {
     });
 });
 
-var port = Number(process.env.PORT || 5000);
+var port = Number(process.env.PORT || 3000);
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
