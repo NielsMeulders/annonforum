@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var db = require('orchestrate')('2504ce17-b4e3-490d-bc14-8661cebc05c8');
+var db = require('orchestrate')(process.env.ORCHESTRATE_API_KEY);
 var moment = require('moment');
 
 
@@ -10,10 +10,6 @@ var moment = require('moment');
 router.get('/', function(req, res) {
 
   var offset = req.param("page") ? (req.param("page") - 1) * 10 : 0;
-
-  if(req.param("page") == 1){
-      offset = 0;
-  }
 
   db.newSearchBuilder()
     .collection('forum-project')
