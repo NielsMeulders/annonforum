@@ -31,6 +31,8 @@ Don't know where to get your `ORCHESTRATE_API_KEY`? Follow along:
 3. See that value under `API Keys`? That's your `ORCHESTRATE_API_KEY`.
 4. `echo 'you did it' | say`
 
+## Resources
+
 [node.js]: http://nodejs.org/
 [Annon Forum App]: http://www.annonforum.com/
 [Orchestrate.io]: http://orchestrate.io/
