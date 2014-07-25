@@ -1,6 +1,6 @@
 # Annonymous Conversations App
 
-Annonymous Forum Conversations for talking about whatever you want., by [Tory Adams][] with [Orchestrate.io][].
+[Annon Forum App] for talking about whatever you want., by [Tory Adams][] with [Orchestrate.io][].
 
 ## Install
 
@@ -30,8 +30,6 @@ Don't know where to get your `ORCHESTRATE_API_KEY`? Follow along:
 2. Create an application.
 3. See that value under `API Keys`? That's your `ORCHESTRATE_API_KEY`.
 4. `echo 'you did it' | say`
-
-## Resources
 
 [node.js]: http://nodejs.org/
 [Annon Forum App]: http://www.annonforum.com/
